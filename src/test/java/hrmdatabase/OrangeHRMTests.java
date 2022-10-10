@@ -24,8 +24,8 @@ public class OrangeHRMTests extends BaseTest {
 			.enterPassword("admin123")
 			.clickLogin()
 			.clickWindow()
-			.clickLogout()
-	.getPageTitle();
+			.clickLogout().pagetitle();
+	
 	
 	Assertions.assertThat(Title)
 	.isEqualTo("OrangeHRM");

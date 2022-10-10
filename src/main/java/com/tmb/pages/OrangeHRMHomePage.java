@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.google.common.util.concurrent.Uninterruptibles;
 import com.tmb.driver.DriverManager;
 
-public class OrangeHRMHomePage {
+public class OrangeHRMHomePage extends BasePage {
 
 	private final By linkWelcome =By.xpath("//p[@class='oxd-userdropdown-name']");
 			

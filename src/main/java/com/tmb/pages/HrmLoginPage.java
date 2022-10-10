@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import com.tmb.driver.DriverManager;
 
-public class HrmLoginPage {
+public class HrmLoginPage extends BasePage{
 
 	private final By textboxUsername = By.name("username");
 	private final By textboxPassword = By.xpath("//input[@class='oxd-input oxd-input--active' and @type='password']");
@@ -27,6 +27,11 @@ public class HrmLoginPage {
 		DriverManager.getDriver().findElement(buttonLogin).click();
 		return new OrangeHRMHomePage();
 	}
-
+	
+	public String pagetitle()
+	{
+	 return	getPageTitle();
+		
+	}
 	
 }
