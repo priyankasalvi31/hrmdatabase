@@ -2,24 +2,36 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-30T21:31:41 IST" name="Suite" finished-at="2022-09-30T21:32:04 IST" duration-ms="22775">
+  <suite started-at="2022-10-12T12:23:21 IST" name="Suite" finished-at="2022-10-12T12:23:45 IST" duration-ms="24772">
     <groups>
     </groups>
-    <test started-at="2022-09-30T21:31:41 IST" name="Test" finished-at="2022-09-30T21:32:04 IST" duration-ms="22775">
-      <class name="hrmdatabase.OrangeHRMTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:hrmdatabase.OrangeHRMTests@550dbc7a]" started-at="2022-09-30T21:31:41 IST" name="setUp" finished-at="2022-09-30T21:31:47 IST" duration-ms="6188" status="PASS">
+    <test started-at="2022-10-12T12:23:21 IST" name="Test" finished-at="2022-10-12T12:23:45 IST" duration-ms="24772">
+      <class name="com.tmb.tests.HomepageTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tmb.tests.HomepageTests@7c24b813]" started-at="2022-10-12T12:23:22 IST" name="setUp" finished-at="2022-10-12T12:23:29 IST" duration-ms="7820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginLogout()[pri:0, instance:hrmdatabase.OrangeHRMTests@550dbc7a]" started-at="2022-09-30T21:31:47 IST" name="loginLogout" finished-at="2022-09-30T21:32:03 IST" duration-ms="16214" status="PASS">
+        <test-method signature="loginLogout(java.lang.String,java.lang.String)[pri:0, instance:com.tmb.tests.HomepageTests@7c24b813]" started-at="2022-10-12T12:23:29 IST" name="loginLogout" description="To check whether the user can successfully login and logout " data-provider="LoginTestDataProvider" finished-at="2022-10-12T12:23:44 IST" duration-ms="14622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:hrmdatabase.OrangeHRMTests@550dbc7a]" started-at="2022-09-30T21:32:03 IST" name="tearDown" finished-at="2022-09-30T21:32:04 IST" duration-ms="321" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.HomepageTests@7c24b813]" started-at="2022-10-12T12:23:44 IST" name="tearDown" finished-at="2022-10-12T12:23:45 IST" duration-ms="1289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- hrmdatabase.OrangeHRMTests -->
+      </class> <!-- com.tmb.tests.HomepageTests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

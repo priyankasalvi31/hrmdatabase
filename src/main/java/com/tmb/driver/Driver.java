@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.tmb.constants.FrameworkConstants;
+import com.tmb.enums.ConfigProperties;
 import com.tmb.utils.PropertyUtils;
 
 public final class Driver {
@@ -26,7 +27,7 @@ public static void initDriver() throws Exception
 	System.setProperty("webdriver.chrome.driver", FrameworkConstants.getChromedriverpath());
 	
 	DriverManager.setDriver(new ChromeDriver());
-	DriverManager.getDriver().get(PropertyUtils.get("url"));
+	DriverManager.getDriver().get(PropertyUtils.get(ConfigProperties.URL));
 	}
 	
 }

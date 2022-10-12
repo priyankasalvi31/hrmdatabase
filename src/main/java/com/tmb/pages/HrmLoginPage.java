@@ -2,36 +2,33 @@ package com.tmb.pages;
 
 import org.openqa.selenium.By;
 
-import com.tmb.driver.DriverManager;
+import com.tmb.enums.WaitStrategy;
 
-public class HrmLoginPage extends BasePage{
-
+public class HrmLoginPage extends BasePage {
 	private final By textboxUsername = By.name("username");
 	private final By textboxPassword = By.xpath("//input[@class='oxd-input oxd-input--active' and @type='password']");
 	private final By buttonLogin = By.xpath("//button[@type='submit']");
 
-	public HrmLoginPage enterUserName(String username) {
+	public HrmLoginPage enterUserName(String username) throws Exception {
+		sendKeys(textboxUsername, username, WaitStrategy.PRESENCE,"Username");
 
-		DriverManager.getDriver().findElement(textboxUsername).sendKeys(username);
+	
 		return this;
 	}
 
-	public HrmLoginPage enterPassword(String password) {
+	public HrmLoginPage enterPassword(String password) throws Exception {
 
-		DriverManager.getDriver().findElement(textboxPassword).sendKeys(password);
+		sendKeys(textboxPassword, password, WaitStrategy.PRESENCE,"Password");
 		return this;
 	}
 
-	public OrangeHRMHomePage clickLogin() {
+	public HrmHomePage clickLogin() throws Exception {
 
-		DriverManager.getDriver().findElement(buttonLogin).click();
-		return new OrangeHRMHomePage();
+		click(buttonLogin, WaitStrategy.PRESENCE, "Login button");
+		return new HrmHomePage();
 	}
 	
-	public String pagetitle()
-	{
-	 return	getPageTitle();
-		
+	public String getTitle() {
+		return getPageTitle();
 	}
-	
 }
